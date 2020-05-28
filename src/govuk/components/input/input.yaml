@@ -224,21 +224,73 @@ examples:
       name: numbers-only
       type: number
       pattern: '[0-9]*'
-  - name: with prefix attribute
+  - name: with prefix element
     data:
       label:
-        text: Amount
-      id: input-with-prefix-attribute
+        text: Amount, in pounds
+      id: input-with-prefix-element
       name: amount
       type: number
+      classes: govuk-input--width-10
       prefix:
         text: £
-  - name: with suffix attribute
+  - name: with prefix and error elementa
     data:
       label:
-        text: Weight
-      id: input-with-suffix-attribute
+        text: Amount, in pounds
+      id: input-with-prefix-element-with-error
+      name: amount
+      type: number
+      classes: govuk-input--width-10
+      errorMessage:
+        text: Enter an amount in pounds
+      prefix:
+        text: £
+  - name: with suffix element
+    data:
+      label:
+        text: Weight, in kilograms
+      id: input-with-suffix-element
       name: weight
       type: number
+      classes: govuk-input--width-10
       suffix:
         text: kg
+  - name: with suffix and error elements
+    data:
+      label:
+        text: Weight, in kilograms
+      id: input-with-suffix-element-with-error
+      name: weight
+      type: number
+      classes: govuk-input--width-10
+      errorMessage:
+        text: Enter a weight in kilograms
+      suffix:
+        text: kg
+  - name: with prefix and suffix elements
+    data:
+      label:
+        text: Cost per item, in pounds
+      id: input-with-prefix-suffix-elements
+      name: cost
+      type: number
+      classes: govuk-input--width-10
+      prefix:
+        text: £
+      suffix:
+        text: per item
+  - name: with prefix, suffix and error elements
+    data:
+      label:
+        text: Cost per item, in pounds
+      id: input-with-prefix-suffix-elements-with-error
+      name: cost
+      type: number
+      classes: govuk-input--width-10
+      errorMessage:
+        text: Enter a cost per item in pounds
+      prefix:
+        text: £
+      suffix:
+        text: per item
