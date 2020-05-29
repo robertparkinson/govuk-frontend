@@ -234,7 +234,7 @@ examples:
       classes: govuk-input--width-10
       prefix:
         text: £
-  - name: with prefix and error elementa
+  - name: with prefix and error elements
     data:
       label:
         text: Amount, in pounds
