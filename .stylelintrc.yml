@@ -3,7 +3,6 @@ extends: stylelint-config-gds/scss
 ignoreFiles: src/govuk/vendor/**/*
 rules:
   indentation: ~
-  no-duplicate-selectors: ~
   no-eol-whitespace: ~
   no-extra-semicolons: ~
   rule-empty-line-before: ~
