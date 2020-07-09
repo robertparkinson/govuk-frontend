@@ -3,7 +3,6 @@ extends: stylelint-config-gds/scss
 ignoreFiles: src/govuk/vendor/**/*
 rules:
   indentation: ~
-  no-extra-semicolons: ~
   rule-empty-line-before: ~
   scss/comment-no-loud: ~
   scss/operator-no-unspaced: ~
