@@ -4,6 +4,5 @@ ignoreFiles: src/govuk/vendor/**/*
 rules:
   indentation: ~
   selector-pseudo-element-colon-notation: ~
-  selector-type-no-unknown: ~
   value-keyword-case: ~
   value-list-max-empty-lines: ~
