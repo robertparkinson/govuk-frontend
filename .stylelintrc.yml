@@ -1,5 +1,3 @@
 ---
 extends: stylelint-config-gds/scss
 ignoreFiles: src/govuk/vendor/**/*
-rules:
-  selector-pseudo-element-colon-notation: ~
