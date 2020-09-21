@@ -29,13 +29,25 @@
     }
   }
 
-  .govuk-error-summary__link {
-    @include govuk-typography-weight-bold;
-  }
-
   // Cross-component class - adjusts styling of list component
   .govuk-error-summary__list {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .govuk-error-summary .govuk-link {
+    @include govuk-typography-weight-bold;
+
+    // Override default link styling to use error colour
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $govuk-error-colour;
+    }
+
+    &:focus {
+      @include govuk-focused-text;
+    }
   }
 }

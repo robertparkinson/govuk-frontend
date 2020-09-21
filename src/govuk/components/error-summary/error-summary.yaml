@@ -57,7 +57,7 @@ examples:
         text: The date your passport was issued must be in the past
         href: '#example-error-1'
       -
-        html: <a href="#" class="govuk-error-summary__link">Enter a postcode, like AA1 1AA</a>
+        html: <a href="#" class="govuk-link">Enter a postcode, like AA1 1AA</a>
 - name: without links
   data:
     titleText: There is a problem
