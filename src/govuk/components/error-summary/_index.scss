@@ -35,7 +35,7 @@
     margin-bottom: 0;
   }
 
-  .govuk-error-summary__list a {
+  .govuk-error-summary__link {
     @include govuk-typography-weight-bold;
 
     // Override default link styling to use error colour
