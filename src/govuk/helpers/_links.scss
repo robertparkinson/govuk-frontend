@@ -210,3 +210,27 @@
     }
   }
 }
+
+@mixin govuk-link-style-error {
+  &:link {
+    color: $govuk-error-colour;
+  }
+
+  &:visited {
+    color: $govuk-error-colour;
+  }
+
+  &:hover {
+    color: $govuk-error-colour;
+  }
+
+  &:active {
+    color: $govuk-error-colour;
+  }
+
+  // When focussed, the text colour needs to be darker to ensure that colour
+  // contrast is still acceptable
+  &:focus {
+    color: $govuk-focus-text-colour;
+  }
+}
