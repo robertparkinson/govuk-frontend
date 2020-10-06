@@ -13,6 +13,14 @@
     }
   }
 
+  .govuk-error-summary--success {
+    border-color: govuk-colour("green");
+  }
+
+  .govuk-error-summary--info {
+    border-color: govuk-colour("blue");
+  }
+
   .govuk-error-summary__title {
     @include govuk-font($size: 24, $weight: bold);
 
@@ -35,9 +43,15 @@
     margin-bottom: 0;
   }
 
-  .govuk-error-summary__list a {
+  .govuk-error-summary__link {
     @include govuk-typography-weight-bold;
 
+    &:focus {
+      @include govuk-focused-text;
+    }
+  }
+
+  .govuk-error-summary__link--error {
     // Override default link styling to use error colour
     &:link,
     &:visited,
@@ -45,9 +59,25 @@
     &:active {
       color: $govuk-error-colour;
     }
+  }
 
-    &:focus {
-      @include govuk-focused-text;
+  .govuk-error-summary__link--success {
+    // Override default link styling to use error colour
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: govuk-colour("green");
+    }
+  }
+
+  .govuk-error-summary__link--info {
+    // Override default link styling to use error colour
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: govuk-colour("blue");
     }
   }
 }

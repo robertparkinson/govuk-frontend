@@ -54,101 +54,53 @@ examples:
     titleText: There is a problem
     errorList:
       -
-        text: The date your passport was issued must be in the past
-        href: '#example-error-1'
+        text: No link
       -
-        text: Enter a postcode, like AA1 1AA
+        text: Text link
         href: '#example-error-2'
-- name: without links
+      -
+        html: <a href="/example" class="govuk-error-summary__link">HTML link with necessary class</a>
+      -
+        html: <a href="/example">HTML link without necessary classes</a>
+- name: error
   data:
+    type: error
     titleText: There is a problem
     errorList:
       -
-        text: Invalid username or password
-- name: mixed with and without links
+        text: No link
+      -
+        text: Text link
+        href: '#example-error-2'
+      -
+        html: <a href="/example" class="govuk-error-summary__link govuk-error-summary__link--error">HTML link with necessary class</a>
+      -
+        html: <a href="/example">HTML link without necessary classes</a>
+- name: success
   data:
+    type: success
     titleText: There is a problem
     errorList:
       -
-        text: Invalid username or password
+        text: No link
       -
-        text: Agree to the terms of service to log in
-        href: '#example-error-1'
-- name: with everything
+        text: Text link
+        href: '#example-error-2'
+      -
+        html: <a href="/example" class="govuk-error-summary__link govuk-error-summary__link--success">HTML link with necessary class</a>
+      -
+        html: <a href="/example">HTML link without necessary classes</a>
+- name: info
   data:
+    type: info
     titleText: There is a problem
-    descriptionText: Please fix the errors below.
     errorList:
       -
-        text: Invalid username or password
+        text: No link
       -
-        text: Agree to the terms of service to log in
-        href: '#example-error-1'
-
-# Hidden examples are not shown in the review app, but are used for tests and HTML fixtures
-- name: html as titleText
-  hidden: true
-  data:
-    titleText: Alert, <em>alert</em>
-- name: title html
-  hidden: true
-  data:
-    titleHtml: Alert, <em>alert</em>
-- name: description
-  hidden: true
-  data:
-    descriptionText: Lorem ipsum
-- name: html as descriptionText
-  hidden: true
-  data:
-    descriptionText: See errors below (▼)
-- name: description html
-  hidden: true
-  data:
-    descriptionHtml: See <span>errors</span> below
-- name: classes
-  hidden: true
-  data:
-    classes: extra-class one-more-class
-- name: attributes
-  hidden: true
-  data:
-    attributes:
-      first-attribute: 'true'
-      second-attribute: 'false'
-- name: error list with attributes
-  hidden: true
-  data:
-    errorList:
+        text: Text link
+        href: '#example-error-2'
       -
-        text: Error-1
-        href: '#item'
-        attributes:
-          data-attribute: my-attribute
-          data-attribute-2: my-attribute-2
-- name: error list with html as text
-  hidden: true
-  data:
-    errorList:
+        html: <a href="/example" class="govuk-error-summary__link govuk-error-summary__link--info">HTML link with necessary class</a>
       -
-        text: Descriptive link to the <b>question</b> with an error
-- name: error list with html
-  hidden: true
-  data:
-    errorList:
-      -
-        html: The date your passport was issued <b>must</b> be in the past
-- name: error list with html link
-  hidden: true
-  data:
-    errorList:
-      -
-        html: Descriptive link to the <b>question</b> with an error
-        href: '#error-1'
-- name: error list with html as text link
-  hidden: true
-  data:
-    errorList:
-      -
-        text: Descriptive link to the <b>question</b> with an error
-        href: '#error-1'
+        html: <a href="/example">HTML link without necessary classes</a>
