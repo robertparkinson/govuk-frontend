@@ -23,7 +23,7 @@
   .govuk-notification-banner__header {
     padding: 0 govuk-spacing(3) govuk-spacing(1);
     background-color: $govuk-brand-colour;
-
+    border-bottom: 1px solid transparent;
 
     @include govuk-media-query($from: tablet) {
       padding: (govuk-spacing(2) - $govuk-border-width) govuk-spacing(4) govuk-spacing(2);
